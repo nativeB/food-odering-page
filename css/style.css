@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.header {
+	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+}
+#head {
+	color: white;
+	background-color: #161920;
+}
+.sides {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.middle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.menudiv {
+	background-color: ghostwhite;
+	margin: 4px 0;
+	height: 2px;
+	border-radius: 10px;
+}
+#one {
+	width: 30px;
+}
+#two {
+	width: 20px;
+}
+#three {
+	width: 25px;
+}
+#main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#banner {
+	background-image: url("../assets/header.png");
+	height: 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+li p .text-fade {
+	padding-left: 1vw;
+}
+#head .text-adapt.middle span {
+	padding-right: 1.5vw;
+}
+.item {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.item div ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}
+.content div:nth-of-type(2) {
+	flex-grow: 10;
+}
+.content div:nth-of-type(3) {
+	flex-grow: 1;
+}
+.content div:nth-of-type(1) {
+	flex-grow: 2;
+}
+.item ul li:nth-of-type(1) {
+	font-size: 3vw;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+.item ul li:nth-of-type(2) {
+	opacity: 0.3;
+	font-size: 2.2vw;
+}
+.item ul li:nth-of-type(3) {
+	font-size: 3vw;
+	opacity: 0.8;
+}
+.line {
+	content: '';
+	left: 0;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 1px solid;
+	opacity: 0.1;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+#subhead {
+	font-weight: 700;
+	background-color: #F4F4F4;
+	opacity: 0.7;
+}
+.fade {
+	opacity: 0.5;
+}
+.text-fade {
+	opacity: 0.5;
+	font-size: 2.2vw;
+}
+.text-same {
+	font-size: 13px;
+}
+.text-adapt {
+	font-size: 3vw;
+}
+.item-main {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-right: 20px;
+	align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+.item-main {
+	align-items: stretch;
+}
+}
+.item-main ul li {
+	padding-top: 10px;
+}
+.reddish {
+	color: red;
+	font-size: 4vw;
+}
+.greenish {
+	color: green;
+	font-size: 4vw;
+}
